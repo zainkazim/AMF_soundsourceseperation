@@ -250,14 +250,14 @@ if __name__ == "__main__":
     plt.title("STFT Phase")
     plt.imshow(np.angle(spec_FTM[:, :, 0]), aspect="auto", origin="lower", cmap="twilight")
     plt.colorbar(label="Phase")
-    plt.show()
+    #plt.show()
 
     separater = FastMNMF2Bin(n_source=args.n_source)
     separater.load_spectrogram(spec_FTM, sample_rate)
 
     separater.solve(
         n_iter=100,
-        save_dir="./output",
+        save_dir="/home/ZA/Music/Media project/AMF_MP/SoundSourceSeparation/src/separation/output",
         save_wav=True,
         base_name="final_separation"
     )
