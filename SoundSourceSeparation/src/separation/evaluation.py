@@ -13,8 +13,8 @@ def convert_alaw_to_pcm(input_file, output_file):
     audio.export(output_file, format='wav', codec='pcm_s16le')
 
 # Paths to reference and separated files
-reference_dir = '/home/ZA/Music/Media project/AMF_MP/SoundSourceSeparation/src/separation/input/'  # Directory containing clean reference files
-separated_dir = '/home/ZA/Music/Media project/AMF_MP/SoundSourceSeparation/src/separation/output/'  # Directory containing separated output files
+reference_dir = '/home/ZA/Desktop/SoundSoulSeparationViaBins/output/0_channel.wav'  # Directory containing clean reference files
+separated_dir = '/home/ZA/Desktop/SoundSoulSeparationViaBins/output/1_channel.wav'  # Directory containing separated output files
 
 # List of channels (for example, if you have 2 channels in the reference file)
 channels = [0, 1]  # Update this list based on the number of channels in your reference audio
